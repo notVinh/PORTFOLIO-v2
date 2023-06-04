@@ -1,6 +1,13 @@
 import "@styles/globals.css";
+<link rel="icon" href="public\assets\icons\favicon.ico" sizes="any" />;
 
-export const metadata = { title: "Portfolio", description: "Vinh" };
+export const metadata = {
+  title: "Portfolio",
+  description: "Vinh",
+  icons: {
+    icon: "assets/icons/favicon.ico",
+  },
+};
 
 const RootLayout = ({ children }) => {
   return (
