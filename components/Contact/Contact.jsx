@@ -14,7 +14,7 @@ const Contact = () => {
   return (
     <div
       id="Contact"
-      className="flex flex-col mx-24 xl:pt-36 pt-16 justify-around items-center min-h-sectionHeight"
+      className="flex flex-col mx-10 xl:pt-36 pt-16 justify-around items-center min-h-sectionHeight"
     >
       <h1 className="font-extrabold xl:text-6xl text-3xl text-textColor xl:pb-14 pb-1">
         Contact <span className="text-primaryColor">Me</span>

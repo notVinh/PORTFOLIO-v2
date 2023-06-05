@@ -35,7 +35,7 @@ const Project = () => {
   return (
     <div
       id="Project"
-      className="flex flex-col m-auto xl:pt-36 pt-16 justify-center items-center min-h-sectionHeight"
+      className="flex flex-col m-auto xl:pt-36 pt-16 xl:mx-0 mx-10 justify-center items-center min-h-sectionHeight"
     >
       <h1 className="font-extrabold xl:text-6xl text-3xl  text-textColor mb-7">
         My

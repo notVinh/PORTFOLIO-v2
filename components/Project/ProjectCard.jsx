@@ -4,7 +4,7 @@ import { IoOpenOutline } from "react-icons/io5";
 
 const ProjectCard = ({ order, img, name, desc, usage, codeLink, demoLink }) => {
   return (
-    <div className="flex flex-col xl:flex-row justify-between items-center p-9 border-b-2">
+    <div className="flex flex-col xl:flex-row justify-between items-center p-3 border-b-2">
       {order ? (
         <div className="flex xl:w-6/12 justify-center items-center xl:p-5 pr-0 order-0">
           <div className="overflow-hidden ">
