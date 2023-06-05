@@ -5,18 +5,18 @@ export const metadata = {
   title: "Portfolio",
   description: "Vinh",
   icons: {
-    icon: "assets/icons/favicon.ico",
+    icon: "assets/icons/favicon512.png",
   },
 };
 
 const RootLayout = ({ children }) => {
   return (
     <html lang="en" className="scroll-smooth">
-      <body>
+      <body className="">
         {/* <div className="main">
           <div className="gradient"></div>
         </div> */}
-        <main className="app font-mont">{children}</main>
+        <main className="app font-mont ">{children}</main>
       </body>
     </html>
   );

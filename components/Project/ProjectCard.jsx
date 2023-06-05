@@ -2,14 +2,22 @@ import React from "react";
 import { BsGithub } from "react-icons/bs";
 import { IoOpenOutline } from "react-icons/io5";
 
-const ProjectCard = ({ img, name, desc, codeLink, demoLink }) => {
+const ProjectCard = ({ order, img, name, desc, usage, codeLink, demoLink }) => {
   return (
-    <div className="flex flex-col xl:flex-row justify-center items-center">
-      <div className="flex justify-center items-center xl:pr-7 pr-0">
-        <div className="overflow-hidden ">
-          <img className="xl:h-72 h-44" src={img} alt="" />
+    <div className="flex flex-col xl:flex-row justify-between items-center p-9 border-b-2">
+      {order ? (
+        <div className="flex xl:w-6/12 justify-center items-center xl:p-5 pr-0 order-0">
+          <div className="overflow-hidden ">
+            <img className="xl:h-72 h-44" src={img} alt="" />
+          </div>
         </div>
-      </div>
+      ) : (
+        <div className="flex xl:w-6/12 justify-center items-center xl:p-5  pr-0 xl:order-1 order-0">
+          <div className="overflow-hidden ">
+            <img className="xl:h-72 h-44" src={img} alt="" />
+          </div>
+        </div>
+      )}
       <div className="xl:w-6/12 w-full  flex flex-col justify-center items-center p-7 xl:p-0">
         <h1 className="xl:text-3xl text-2xl text-primaryColor font-bold mb-7">
           {name}
@@ -17,11 +25,16 @@ const ProjectCard = ({ img, name, desc, codeLink, demoLink }) => {
         <p className="mb-6 leading-relaxed text-3-xl xl:text-left text-center">
           {desc}
         </p>
+        <div className="flex justify-center items-center pb-9">
+          {usage.map((item) => (
+            <div className="flex font-bold text-1xl mx-5">{item}</div>
+          ))}
+        </div>
         <div className="flex justify-center items-center">
-          <div className="flex font-semibold text-1xl">
+          <div className="flex font-medium text-1xl">
             <a
               href={codeLink}
-              className="flex justify-center items-center mr-10"
+              className="flex justify-center items-center mx-5"
             >
               Code
               <span className="pl-2">
@@ -30,7 +43,7 @@ const ProjectCard = ({ img, name, desc, codeLink, demoLink }) => {
             </a>
             <a
               href={demoLink}
-              className="flex justify-center items-center "
+              className="flex justify-center items-center mx-5"
               target="_blank"
             >
               Demo

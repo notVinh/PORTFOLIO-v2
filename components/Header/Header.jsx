@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <>
       <div className="bg-white fixed z-10 top-0 left-0 px-32 pt-3 w-full  xl:flex justify-between items-center text-textColor hidden">
-        <div className="text-4xl font-bold hover:cursor-pointer">
+        <div className="text-4xl font-bold hover:cursor-pointer text-primaryColor">
           <a href="#Home">VINH</a>
         </div>
       </div>
