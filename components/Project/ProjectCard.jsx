@@ -27,14 +27,14 @@ const ProjectCard = ({ order, img, name, desc, usage, codeLink, demoLink }) => {
         </p>
         <div className="flex justify-center items-center pb-9">
           {usage.map((item) => (
-            <div className="flex font-bold text-1xl mx-5">{item}</div>
+            <div className="flex font-bold text-1xl xl:mx-5">{item}</div>
           ))}
         </div>
         <div className="flex justify-center items-center">
           <div className="flex font-medium text-1xl">
             <a
               href={codeLink}
-              className="flex justify-center items-center mx-5"
+              className="flex justify-center items-center xl:mx-5"
             >
               Code
               <span className="pl-2">
