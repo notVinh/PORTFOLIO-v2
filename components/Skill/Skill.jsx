@@ -18,7 +18,7 @@ const Skill = () => {
         <SkillList src={"assets/images/physics.png"} name={"React"} />
         <SkillList src={"assets/images/tailwindcss.png"} name={"Tailwindcss"} />
         <SkillList src={"assets/images/sass.png"} name={"SASS"} />
-        <SkillList src={"assets/images/typescript.png"} name={"TypeScript"} />
+        <SkillList src={"assets/images/nextjs.png"} name={"NextJS"} />
       </ul>
     </div>
   );

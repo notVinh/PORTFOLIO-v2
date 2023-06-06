@@ -22,7 +22,7 @@ const Projects = [
   },
   {
     order: true,
-    img: "assets/images/pro1.png",
+    img: "assets/images/pro3.png",
     name: "AI Prompt",
     usage: ["NextJS", "TailwindCSS", "MongoDB"],
     desc: "AI Prompt is a project used to help users copy and use a content that the user adds, it is like a dictionary with everything you want to search but first you have to teach it.",
